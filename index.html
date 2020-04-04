@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather App by Eddie Madrigal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="weather.css">
+    </head>
+    <body onload="getLocation()">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <h1 id="h1color">Weather Data</h1>
+            <p id="pcolor">Find weather data information for a particular city.</p>
+            <div id="form">
+                <div>
+                    <label id="city-label" for="city">City</label>
+                    <input type="text" name="urCity" id="urCity" placeholder="City" autocomplete="off" />
+                </div>
+                <div>
+                    <label id="city-label" for="state">State / Province</label>
+                    <input type="text" name="urState" id="urState" placeholder="State" autocomplete="off" />
+                </div>
+                <div>
+                    <label id="city-label" for="country">Country</label>
+                    <input type="text" name="urCountry" id="urCountry" placeholder="Country" autocomplete="off" />
+                </div>
+                <div>
+                    <input id="submit" type="submit" value="Submit" onclick="getWeatherData()" />
+                </div>
+            </div>
+            <div>
+                <h2 id="status"></h2>
+            </div>
+            <div id="myDataBlock">
+                <div>
+                    <img src="" id="myIcon" width="200px" />
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Location:</td>
+                            <td><span id="myLocation"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Temperature:</td>
+                            <td><span id="myTemp"></span>&deg; F</td>
+                        </tr>
+                        <tr>
+                            <td>Date/Time:</td>
+                            <td><span id="myDate"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Description:</td>
+                            <td><span id="myDescription"></span></td>
+                        </tr>
+                    </table>
+                </div>                
+            </div>
+        </div>
+
+        <script src="./weather.js" async defer></script>
+    </body>
+</html>

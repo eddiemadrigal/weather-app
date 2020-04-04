@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-color {
+    color: #000;
+}
+
+body {
+    background-image: url('');
+    background-color: #ccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li.result {
+    list-style: none;
+}
+
+#city-label {
+    display: none;
+}
+
+div.container {
+    width: 70%;
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #fff;
+    opacity: 0.92;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+h1, p {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 10px;
+}
+
+#form {
+    display: flex;
+}
+
+.result {
+    font-size: 2rem;
+}
+
+td {
+    text-align: left;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+#myDataBlock {
+    margin: 0 auto;
+    display: none;
+    justify-content: space-around;
+    background-color: #fff;
+    opacity: 0.92;
+    border-radius: 5px;
+    padding: 1rem;
+}
